@@ -1,0 +1,27 @@
+body{
+    background: lightblue;
+}
+
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 300%;
+    text-align: center;
+}
+
+div#textbox{
+    text-align: center;
+    background: rgb(233, 232, 232);
+    margin-left: 20%;
+    margin-right: 20%;
+    
+    height:500px;
+}
+
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 30px;
+}
