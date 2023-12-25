@@ -1,5 +1,5 @@
 body{
-    background: rgb(7, 192, 254);
+    background: rgb(204, 241, 253);
     
 }
 
@@ -69,16 +69,22 @@ hr{
 }
 
 #nav{
+    text-align: center;
     font-size: 30px;
     border: 2px solid rgb(0, 0, 0);
     width: 230px;
     height: 170px;
     float: left;
     position: absolute;
-    top: 90px;
+    top: 121px;
     padding-top: 10px;
     background-color: #caf6e4;
 }
+
+#nav button{
+    width:180px;
+}
+
 #nav a:visited{
     color: darkolivegreen;
     text-decoration: none;
@@ -92,4 +98,18 @@ hr{
 #nav a:link{
     color: darkolivegreen;
     text-decoration: none;
+}
+
+#contact{
+    margin-bottom: 200px;
+}
+
+#info{
+    font-size: 35px;
+    border: 2px solid rgb(0, 0, 0);
+    width: auto;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    background-color: aliceblue;
 }
