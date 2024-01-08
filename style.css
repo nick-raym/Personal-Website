@@ -1,5 +1,6 @@
 body{
-    background: rgb(204, 241, 253);
+    background-color: rgb(7,192,254);
+    
     
 }
 
@@ -24,6 +25,14 @@ p{
     margin-left: 70px;
     margin-right: 70px;
     margin-bottom: 0px;
+}
+#align{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#press{
+    color: blue;
 }
 
 .head{
@@ -104,7 +113,7 @@ hr{
     margin-bottom: 200px;
 }
 
-#info{
+.info{
     font-size: 35px;
     border: 2px solid rgb(0, 0, 0);
     width: auto;
@@ -113,3 +122,9 @@ hr{
     text-align: center;
     background-color: aliceblue;
 }
+
+#contact a:hover{
+    color:blue ;
+
+}
+

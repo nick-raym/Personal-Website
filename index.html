@@ -3,8 +3,9 @@
     <head>
         <link rel="stylesheet" href="./style.css"/>
         <title>Personal Website</title>
+        <script defer src="./index.js"></script>
     </head>
-    <body>
+    <body id="body">
         <h1 id="top" class="text">Nick's Personal Website</h1>
         <div id="first">
         <div id="navbox">
@@ -20,9 +21,12 @@
             <p>Hi, I'm Nick. My hobbies include boxing, basketball, and creating various types of things. Obviously, coding is a big one, as I attended American University for computer science. I have created
                  various programs like facial recognition, a fantasy football predictor, games using python(pygame), and many more. I am also really into making music. I like making many types of music, but rap has always been special to me. Other genres
                  I weave into the songs I create are rock, RnB, punk, pop, and EDM. 
-            </p><br>
-            
-        </div>
+            </p>
+            <br>
+            </div>
+            <div id="align">
+                <button id="press">Press Me</button>
+            </div>
         </div>
 
         <div id="artists">
@@ -31,7 +35,7 @@
 
             <table class="imgs">
                 <tr>
-                    <td><img class="image" id="uzi" alt="Lil Uzi Vert"src="./uzi.jpeg" title="Display Title"/> <p class="img-text">Lil Uzi Vert</p> </td>
+                    <td><img class="image" id="uzi" alt="Lil Uzi Vert"src="./uzi.jpeg" title="Lil Uzi Vert"/> <p class="img-text">Lil Uzi Vert</p> </td>
                     <td><img  class="image" alt="Kanye West" src="./Ye.jpeg"/> <p class="img-text">Kanye</p> </td>
                 </tr>
                 <tr>
@@ -71,10 +75,10 @@
         <hr>
         <div id="contact">
             <h2 class="head">Contact Me</h2>
-            <p id="info" class="text"><em>Email:</em> NLHRayman@gmail.com</p>
-
+            <p class="text info"><em>Email:</em> NLHRayman@gmail.com</p>
+            <p class="text info"><em>linkedin:</em> <a href="https://www.linkedin.com/in/nicholas-rayman-6a78a2289/" target=”_blank”>My Linkedin page</a></p>
         </div>
 
-        <script src="./index.js"></script>
+        
     </body>
 </html>
