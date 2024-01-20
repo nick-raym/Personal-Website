@@ -15,7 +15,7 @@ div#textbox{
     overflow:hidden;
     margin-left: 20%;
     margin-right: 20%;
-    height:360px;
+    height:400px;
     border: 2px solid rgb(0, 0, 0);
 }
 
@@ -50,12 +50,14 @@ p{
 }
 .imgs{
     /*border-spacing: 200px;*/
-    border-spacing:280px 50px;
+    border-spacing:250px 50px;
+    margin-left: -50px;
 }
 
 .img-text{
     text-align: center;
     font-size: smaller;
+    margin-left: center;
     margin-top: 0px;
     width: 200px;
 }
@@ -107,6 +109,18 @@ hr{
 #nav a:link{
     color: darkolivegreen;
     text-decoration: none;
+}
+
+#kanye-quote{
+    text-align: center;
+}
+
+#quote{
+    min-height: 200px;
+}
+
+#div-button{
+    text-align: center;
 }
 
 #contact{
