@@ -43,6 +43,17 @@ pressMe.addEventListener('click', function() {
 
   })
 
+  function mmaStats(){
+    fetch("https://api.sportradar.us/mma/trial/v2/en/champions.json?api_key=hg9s33jqdr37es6y8vz5qd4j")
+    .then(response=>response.json())
+    .then(mmaInfo=>{
+      console.log(mmaInfo)
+    })
+    .catch(error=>console.log(error))
+  }
+  
+  mmaStats()
+
 
   //add submit to kanye quote to add a comment
   //on hover do something
