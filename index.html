@@ -13,13 +13,15 @@
                 <button><a href="#top">Top</a></button><br>
                 <button><a href="#artists">Favorite Artists</a></button><br>
                 <button><a href="#athletes">Favorite Athletes</a></button><br>
-                <button><a href="#contact">Contact Me</a></button>
+                <button><a href="#quote">Random Kanye Quote</a></button><br>
+                <button><a href="#zip">Zip-Code Finder</a></button><br>
+                <button><a href="#contact">Contact Me</a></button><br>
             </div>
         </div>
             <div id="textbox" class="text">
             <br>
             <p>Hi, I'm Nick. My hobbies include boxing, basketball, and creating various types of things. Obviously, coding is a big one, as I attended American University for computer science. I have created
-                 various programs like facial recognition, a fantasy football predictor, games using python(pygame), and many more. I am also really into making music. I like making many types of music, but rap has always been special to me. Other genres
+                 various programs like facial recognition, a fantasy football predictor, games using python(pygame), and more. I also like making music. I like making many genres of music, but rap has always been special to me. Other genres
                  I weave into the songs I create are rock, RnB, punk, pop, and EDM. 
                  <br><br>
             </p>
@@ -82,6 +84,31 @@
             <div id="div-button">
                 <button id="quote-button">Randomize Quote</button>
             </div>
+        </div>
+        <hr>
+        <div>
+            <div id="zip">
+            <h1 class="head"><br>Zip-Code Location Finder</h1>
+            </div>
+
+            <div id="zipList" class="text">
+                <h4>Zip-List:</h4>
+                
+                
+            </div>
+            <div id="hover">
+                <p id="hover-text" class="text">See Supported Countries</p>
+            </div>
+            <form id="find-zip">
+                <h4 class="text">Enter Zip-Code & Country</h4>
+                <label for="enterzip">Zip-Code:</label>
+                <input type="text" name="enterZip" placeholder="(90210)" id="new-Zip" />
+                <label for="enterCountry">Country:</label>
+                <input type="text" name="enterCountry" placeholder="(US,CA,RU)" id="new-country" />
+                <input id="zip-button" type="submit" value="Find Location" />
+            </form>
+            
+            <div id="error" class="text"></div>
         </div>
         <hr>
         <div id="contact">

@@ -15,7 +15,7 @@ div#textbox{
     overflow:hidden;
     margin-left: 20%;
     margin-right: 20%;
-    height:400px;
+    height:360px;
     border: 2px solid rgb(0, 0, 0);
 }
 
@@ -32,7 +32,7 @@ p{
 }
 
 #press{
-    color: blue;
+    color: black;
 }
 
 .head{
@@ -51,7 +51,7 @@ p{
 .imgs{
     /*border-spacing: 200px;*/
     border-spacing:250px 50px;
-    margin-left: -50px;
+    margin-left: 0px;
 }
 
 .img-text{
@@ -84,7 +84,7 @@ hr{
     font-size: 30px;
     border: 2px solid rgb(0, 0, 0);
     width: 230px;
-    height: 170px;
+    height: 235px;
     float: left;
     position: absolute;
     top: 121px;
@@ -96,17 +96,17 @@ hr{
     width:180px;
 }
 
-#nav a:visited{
-    color: darkolivegreen;
-    text-decoration: none;
-}
-
 #nav a:hover{
     color: blue;
     text-decoration: none;
 }
 
-#nav a:link{
+#nav a{
+    color: darkolivegreen;
+    text-decoration: none;
+}
+
+#nav a{
     color: darkolivegreen;
     text-decoration: none;
 }
@@ -125,6 +125,7 @@ hr{
 
 #contact{
     margin-bottom: 200px;
+
 }
 
 .info{
@@ -135,6 +136,40 @@ hr{
     margin-right: 200px;
     text-align: center;
     background-color: aliceblue;
+}
+
+#zipList{
+    border: 1px solid rgb(0, 0, 0);
+    max-width: 1000px;
+    text-align: center;
+    padding-bottom:40px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#zipList p{
+    margin-bottom: -20px;
+    font-size: 17px
+}
+
+#zip-button{
+    margin-left: 15px;
+}
+
+#hover{
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    margin-left: 425px;
+    background-color: aliceblue;
+    border: 2px solid rgb(0, 0, 0);
+    max-width: 600px;
+}
+#abbs{
+    font-size: 16px;
+}
+#unrec{
+    color:red;
 }
 
 #contact a:hover{
