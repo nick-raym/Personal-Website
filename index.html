@@ -15,6 +15,7 @@
                 <button><a href="#athletes">Favorite Athletes</a></button><br>
                 <button><a href="#quote">Random Kanye Quote</a></button><br>
                 <button><a href="#zip">Zip-Code Finder</a></button><br>
+                <button><a href="#mma">MMA Fighter Comparison</a></button><br>
                 <button><a href="#contact">Contact Me</a></button><br>
             </div>
         </div>
@@ -109,6 +110,22 @@
             </form>
             
             <div id="error" class="text"></div>
+        </div>
+        <hr>
+        <div id ="mma">
+            <h1 class="head"><br>MMA Fighter Comparisons</h1>
+            <form id="mma-first">
+                <label class="text" for="enterfirst">Name of First Fighter:</label>
+                <input type="text" name="enterfirst" placeholder="(Israel Adesanya)" id="first-fighter" />
+                <input id="first-button" type="submit" value="See Stats" />
+            </form>
+            <form id="mma-second">
+                <label class ="text" for="entersecond">Name of Second Fighter:</label>
+                <input type="text" name="entersecond" placeholder="(Charles Oliveira)" id="second-fighter" />
+                <input id="second-button" type="submit" value="See Stats" />
+            </form>
+            <div id="first-stats"></div>
+            <div id="second-stats"></div>
         </div>
         <hr>
         <div id="contact">

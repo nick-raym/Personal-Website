@@ -116,3 +116,74 @@ pressMe.addEventListener('click', function() {
     document.querySelector("#abbs").remove()
     
   })
+
+  fetch("http://localhost:3000/fighters")
+  .then(response=>response.json())
+  .then(fighters=>{
+    const mmaFormOne = document.querySelector("#mma-first")
+    const mmaFormTwo = document.querySelector("#mma-second")
+
+    mmaFormOne.addEventListener("submit",event=>{
+      event.preventDefault()
+      let fighterOne = mmaFormOne.enterfirst.value
+      let nameArray = fighterOne.split(" ")
+      const capArray=nameArray.map(name=>{
+        let firstLetter = name[0].toUpperCase()
+        name = firstLetter + name.substring(1)
+        return name
+      })
+      const fighterOneName = capArray.join(" ")
+      const firstStats= document.querySelector("#first-stats")
+    
+      fighters.forEach(fighter => {
+          if(fighterOneName === fighter["name"]){
+            const newStat = fighterStats(fighter)
+            firstStats.innerHTML=""
+            firstStats.append(newStat)
+          }
+      })
+    })
+
+    mmaFormTwo.addEventListener("submit",event=>{
+      event.preventDefault()
+      let fighterTwo = mmaFormTwo.entersecond.value
+      let nameArray = fighterTwo.split(" ")
+      const capArray=nameArray.map(name=>{
+        let firstLetter = name[0].toUpperCase()
+        name = firstLetter + name.substring(1)
+        return name
+      })
+      const fighterTwoName = capArray.join(" ")
+      const secondStats= document.querySelector("#second-stats")
+    
+      fighters.forEach(fighter => {
+          if(fighterTwoName === fighter["name"]){
+            const newStat = fighterStats(fighter)
+            secondStats.innerHTML=""
+            secondStats.append(newStat)
+          }
+      })
+    })
+
+  
+  })
+  .catch(error=>{
+    console.log(error)
+  })
+
+
+  function fighterStats(fighter){
+      const newStat = document.createElement("h3")
+      if(!(fighter["nickname"]==="")){
+        newStat.innerHTML='<em>"'+fighter["nickname"]+'"</em>'+'<br>'
+        }
+        newStat.innerHTML+="Record: "+"("+fighter["wins"]+", "+fighter["losses"]+", "+fighter["draws"]+")"
+        newStat.innerHTML+="<br>Ht: "+fighter["height_cm"]+"cm Wt: "+fighter["weight_in_kg"]+"kg Reach: "+fighter["reach_in_cm"]+"cm"
+        newStat.innerHTML+="<br>"+fighter["stance"]+" Stance"
+        newStat.innerHTML+="<br>SSLPM: "+fighter["significant_strikes_landed_per_minute"]+" SS Accuracy: "+fighter["significant_striking_accuracy"]+"%"
+        newStat.innerHTML+="<br>SS-absorbed-Pm: "+fighter["significant_strikes_absorbed_per_minute"]+" SS-Def: "+fighter["significant_strike_defence"]+"%"
+        newStat.innerHTML+="<br>TDLPM: "+fighter["average_takedowns_landed_per_15_minutes"]+" TDACC: "+fighter["takedown_accuracy"]+"% TD-Def: "+fighter["takedown_defense"]+"%"
+        newStat.innerHTML+="<br> Avg-Subs-Att/15mins: "+fighter["average_submissions_attempted_per_15_minutes"]
+        return newStat
+
+  }
