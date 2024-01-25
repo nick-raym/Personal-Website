@@ -15,7 +15,7 @@ div#textbox{
     overflow:hidden;
     margin-left: 20%;
     margin-right: 20%;
-    height:360px;
+    height:390px;
     border: 2px solid rgb(0, 0, 0);
 }
 
@@ -84,7 +84,7 @@ hr{
     font-size: 30px;
     border: 2px solid rgb(0, 0, 0);
     width: 230px;
-    height: 235px;
+    height: 260px;
     float: left;
     position: absolute;
     top: 121px;
@@ -160,7 +160,7 @@ hr{
     text-align: center;
     margin-top: 20px;
     padding-bottom: 15px;
-    margin-left: 365px;
+    margin-left: 420px;
     background-color: aliceblue;
     border: 2px solid rgb(0, 0, 0);
     max-width: 600px;
@@ -172,28 +172,28 @@ hr{
     padding-bottom: 210px;
 }
 #mma-first{
-    margin-left: 200px;
+    margin-left: 250px;
     
 }
 #mma-second{
     float: right;
     margin-top: -25px;
-    margin-right: 200px;
+    margin-right: 250px;
 }
 #first-stats{
-    margin-left:200px;
+    margin-left:250px;
     text-align: center;
     width: 400px;
     margin-top:10px;
     background-color: aliceblue;
     float:left;
-    
 }
+
 #second-stats{
     background-color: aliceblue;
     text-align: center;
     width: 400px;
-    margin-right: 200px;
+    margin-right: 250px;
     margin-top:10px;
     position: relative;
     float:right;
